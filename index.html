@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="w-full h-screen overflow-hidden">
+      <div class="w-full h-screen absolute z-[2] text-white">
+        <nav class="flex items-center justify-between text-white px-12 py-8">
+          <h1 class="text-3xl font-semibold font-sans">Planets</h1>
+          <ul class="flex items-center justify-between gap-28">
+            <li class="text-white text-lg">
+              <a href="#" class="font-semibold font-sans">Home</a>
+            </li>
+            <li class="text-white text-lg">
+              <a href="#" class="font-semibold font-sans">About</a>
+            </li>
+            <li class="text-white text-lg">
+              <a href="#" class="font-semibold font-sans">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="absolute top-[3%] left-1/2 -translate-x-1/2">
+          <div class="h-[9.8em] overflow-hidden">
+            <div class="headings-container">
+              <h1
+                class="headings text-center text-[9em] leading-none font-thin mb-2 tracking-tight"
+              >
+                Earth
+              </h1>
+              <h1
+                class="headings text-center text-[9em] leading-none font-thin mb-2 tracking-tight"
+              >
+                Venus
+              </h1>
+              <h1
+                class="headings text-center text-[9em] leading-none font-thin mb-2 tracking-tight"
+              >
+                Volcanic
+              </h1>
+              <h1
+                class="headings text-center text-[9em] leading-none font-thin mb-2 tracking-tight"
+              >
+                Csilla
+              </h1>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <p class="text-xl text-center font-semibold mb-2">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <div
+            class="line w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"
+          ></div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
