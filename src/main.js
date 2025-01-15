@@ -37,12 +37,7 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
 
 const group = new THREE.Group();
-const textures = [
-  "/csilla/color.png",
-  "/volcanic/color.png",
-  "/venus/map.jpg",
-  "/earth/map.jpg",
-];
+
 const rgbeLoader = new RGBELoader();
 
 rgbeLoader.load(
@@ -58,6 +53,12 @@ textureLoader.colorSpace = THREE.SRGBColorSpace;
 
 const spheres = [];
 
+const textures = [
+  "/csilla/color.webp",
+  "/volcanic/color.webp",
+  "/venus/map.webp",
+  "/earth/map.webp",
+];
 for (let i = 0; i < 4; i++) {
   const texture = textureLoader.load(textures[i]);
   const geometry = new THREE.SphereGeometry(6, 82, 56);
