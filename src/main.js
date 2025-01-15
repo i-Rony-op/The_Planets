@@ -166,6 +166,17 @@ gsap.from("nav h1 , nav a", {
   ease: "power2.inOut",
   stagger: 0.5,
 });
+window.onload = () => {
+  setTimeout(() => {
+    gsap.to(".loader", {
+      duration: 1.5,
+      scale: 0,
+      translateY: "-100%",
+      ease: "power2.inOut",
+    });
+  }, 18000);
+};
+
 function animate() {
   renderer.render(scene, camera);
   spheres.forEach((e) => {
