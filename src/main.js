@@ -145,7 +145,7 @@ gsap.from(".headings-container", {
   delay: 1,
 });
 
-gsap.from("p", {
+gsap.from(".para p", {
   y: 100,
   opacity: 0,
   duration: 1,
@@ -171,7 +171,6 @@ window.onload = () => {
     gsap.to(".loader", {
       duration: 1.5,
       scale: 0,
-      translateY: "-100%",
       ease: "power2.inOut",
     });
   }, 18000);

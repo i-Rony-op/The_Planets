@@ -9,10 +9,14 @@
   <body>
     <div class="w-full h-screen overflow-hidden">
       <div
-        class="loader absolute w-full h-screen flex items-center justify-center bg-zinc-950 z-[3]"
+        class="loader absolute w-full h-screen flex items-center justify-center bg-zinc-950 z-[3] text-white"
       >
-        <h1 class="text-white text-6xl font-medium">Loading Models....</h1>
+        <div class="text flex flex-col gap-4 items-center justify-center">
+          <h1 class="text-white text-6xl font-medium">Loading Planets....</h1>
+          <p class="text-xl">This may take a while ⏳</p>
+        </div>
       </div>
+
       <div class="w-full h-screen absolute z-[2] text-white">
         <nav class="flex items-center justify-between text-white px-12 py-8">
           <h1 class="text-3xl font-semibold font-sans">Planets</h1>
@@ -29,8 +33,8 @@
           </ul>
         </nav>
         <div class="absolute top-[3%] left-1/2 -translate-x-1/2">
-          <div class="h-[9.8em] overflow-hidden">
-            <div class="headings-container">
+          <div class="overflow-hidden">
+            <div class="headings-container h-[9.8em]">
               <h1
                 class="headings text-center text-[9em] leading-none font-thin mb-2 tracking-tight"
               >
@@ -53,7 +57,7 @@
               </h1>
             </div>
           </div>
-          <div class="overflow-hidden">
+          <div class="para overflow-hidden">
             <p class="text-xl text-center font-semibold mb-2">
               Lorem ipsum dolor sit amet consectetur.
             </p>
