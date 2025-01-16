@@ -173,7 +173,7 @@ window.onload = () => {
       scale: 0,
       ease: "power2.inOut",
     });
-  }, 10000);
+  }, 3000);
 };
 
 function animate() {
